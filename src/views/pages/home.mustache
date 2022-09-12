@@ -1,0 +1,28 @@
+{{>partials/header}}
+<main>
+    <section class="registry">
+        <h2>Cadastre um Usuário</h2>
+
+        <form action="/newaddeduser" method="POST">
+            <label for="name">Insira o nome do usuário</label>
+            <input type="text" id="name" name="name" class="box" />
+            <label for="age">Insira a idade</label>
+            <input type="number" id="age" name="age" class="box" />
+            <input type="submit" value="Save 🦉" class="btn" />
+        </form>
+    </section>
+    <section class="users">
+        <h2>Usuários adicionados</h2>
+
+        <div class="user">
+            <ul>
+                {{#users}}
+                <li>
+                    <span id="identifier">#{{ id }}</span> {{ name }} - {{ age }} Anos
+                </li>
+                {{/users}}
+            </ul>
+        </div>
+    </section>
+</main>
+{{>partials/footer}}

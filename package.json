@@ -1,0 +1,34 @@
+{
+    "name": "mysql-node-ts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start-dev": "nodemon -e mustache,ts,json src/server.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gabrielpovoa/mysql-node-ts.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gabrielpovoa/mysql-node-ts/issues"
+    },
+    "homepage": "https://github.com/gabrielpovoa/mysql-node-ts#readme",
+    "dependencies": {
+        "@types/express": "^4.17.13",
+        "@types/mustache": "^4.2.1",
+        "@types/mustache-express": "^1.2.2",
+        "@types/sequelize": "^4.28.14",
+        "dotenv": "^16.0.2",
+        "env": "^0.0.2",
+        "express": "^4.18.1",
+        "mustache": "^4.2.0",
+        "mustache-express": "^1.3.2",
+        "mysql2": "^2.3.3",
+        "sequelize": "^6.21.6"
+    }
+}

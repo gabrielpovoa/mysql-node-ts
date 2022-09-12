@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html {
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #7159c1;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 2rem 5%;
+}
+
+section {
+    padding: 2rem;
+}
+
+main {
+    padding: 2rem 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation .image {
+    background-color: #454545;
+    font-size: 2rem;
+}
+
+.navigation h2 {
+    padding: 0 .4rem;
+    background-color: #FFFF;
+}
+
+.registry h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+.registry form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.registry form label {
+    margin-block: .2rem;
+}
+
+.registry form label:last-of-type {
+    margin-top: 2rem;
+}
+
+.registry form .box {
+    width: 100%;
+    max-width: 30rem;
+    text-transform: capitalize;
+    padding: .8rem 1rem;
+    border-radius: .3rem;
+}
+
+.btn {
+    width: 100%;
+    max-width: 30rem;
+    margin-top: 2rem;
+    padding: .8rem 0;
+    border-radius: .3rem;
+    border-bottom: .9rem solid orange;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    border-bottom: .9rem solid #7159c1;
+    background-color: #E34A6F;
+    color: #FFF;
+}
+
+.users {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: .4rem;
+    background-color: #451bb7bd;
+    opacity: .9;
+    color: #fff;
+}
+
+.users .user {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.users .user ul {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.users .user ul li {
+    font-weight: 600;
+}
+
+.users .user ul li span {
+    opacity: .3;
+    margin-right: .5rem;
+}
+
+.footer {
+    position: absolute;
+    padding: 2rem 5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #7159c1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer .rights sup {
+    font-size: 1.2rem;
+}
+
+footer .rights .credit {
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        position: initial;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .footer {
+        position: initial;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
