@@ -7,7 +7,7 @@ export interface UserInstace extends Model {
     age: number;
 }
 
-export const User = sequelize.define<UserInstace>("user", {
+export const User = sequelize.define<UserInstace>("User", {
     id: {
         primaryKey:true,
         type: DataTypes.INTEGER

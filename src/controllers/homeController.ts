@@ -9,15 +9,21 @@ export const Home = async (req: Request, res: Response) => {
 }
 
 export const CreateUser = async (req: Request, res: Response) => {
-    let username: string = req.body.name
-    let age: number = req.body.age
+    let { username, age } = req.body
 
-    const NewUser = User.build({
-        name: username,
-        age: age
-    })
 
-    await NewUser.save()
+    try {
+        const NewUser = User.build({
+            name: username,
+            age: age
+        })
+
+        await NewUser.save()
+    } catch (e) {
+        console.log(e)
+    }
+
+
 
     res.redirect('/')
 }
