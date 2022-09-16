@@ -11,7 +11,6 @@ export const Home = async (req: Request, res: Response) => {
 export const CreateUser = async (req: Request, res: Response) => {
     let { username, age } = req.body
 
-
     try {
         const NewUser = User.build({
             name: username,
