@@ -14,7 +14,7 @@ export const CreateUser = async (req: Request, res: Response) => {
     try {
         const NewUser = User.build({
             name: username,
-            age: age
+            age: parseInt(age)
         })
 
         await NewUser.save()
