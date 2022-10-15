@@ -19,6 +19,15 @@
                 {{#users}}
                 <li>
                     <span id="identifier">#{{ id }}</span> {{ name }} - {{ age }} Anos
+                    - <button>
+                        <a href="/usuario/{{id}}/increase">✖️</a>
+                    </button>
+                    - <button>
+                        <a href="/usuario/{{id}}/reduce">➖</a>
+                    </button>
+                    - <button>
+                        <a href="/usuario/{{id}}/delete">❌</a>
+                    </button>
                 </li>
                 {{/users}}
             </ul>
